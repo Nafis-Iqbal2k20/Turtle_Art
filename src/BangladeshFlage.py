@@ -1,0 +1,23 @@
+import turtle
+
+artist = turtle.Turtle()
+artist.penup()
+artist.goto(-200, -100)
+artist.pendown()
+for i in range(2):
+    artist.color("green")
+    artist.begin_fill()
+    artist.forward(500)
+    artist.left(90)
+    artist.forward(300)
+    artist.left(90)
+    artist.end_fill()
+artist.penup()
+artist.goto(50, -70)
+artist.pendown()
+artist.color("red")
+artist.begin_fill()
+artist.circle(120)
+artist.end_fill()
+artist.hideturtle()
+artist.screen.mainloop()
